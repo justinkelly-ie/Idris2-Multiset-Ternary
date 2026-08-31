@@ -1,0 +1,16 @@
+package Idris2-Naray2
+version = 0.1.0
+authors = "Justin Kelly"
+brief   = "Layer 2b Dependent Alphabet (F2 -> F3) and Narayana Polynomial Engine."
+
+depends = base
+        , Idris2-Multiset0
+        , Idris2-Boole2
+
+modules = Core.NarayAlphabet
+        , Math.NarayanaPolynomial
+        , Math.AlgebraOfBoole
+        , Reflect.NarayElab
+        , Linear.NarayState
+
+sourcedir = "src"
