@@ -1,24 +1,38 @@
-# 📐 Idris2-Naray2
+# 📐 Idris2-Multiset-Ternary
 
-**Narayana Combinatorics & Dyck Lattice Contour Walks for Idris 2**
+**Layer 2b Balanced Ternary Spacetime Geometry ($\mathbb{F}_3 = \{-1, 0, 1\}$) & Narayana Polynomials for Idris 2**
 
-`Idris2-Naray2` provides combinatorial lattice path primitives:
-- **Canonical Dyck Contour Walks**: Bijective mapping between discrete integer states and non-negative Dyck lattice paths.
-- **Narayana Numbers & Catalan Bounds**: Information channel capacity calculations.
+`Idris2-Multiset-Ternary` provides balanced ternary spacetime geometry, Narayana combinatorial polynomials, and dependent alphabet transitions ($\mathbb{F}_2 \to \mathbb{F}_3$) within the **Constructive Multiset Physics Framework**.
 
 ---
 
-## 🚀 Building & Installing
+## Key Modules & Specifications
 
-Built with Idris 2 (`0.8.0`):
+| Module | Architectural Role & Domain Scope |
+| :--- | :--- |
+| **`Core.NarayAlphabet`** | Dependent ternary alphabet ($\mathbb{F}_3 = \{-1, 0, 1\}$) and alphabet lifting rules. |
+| **`Math.NarayanaPolynomial`** | Narayana combinatorial polynomials $N(n, k)$ and Catalan lattice bounds. |
+| **`Math.AlgebraOfBoole`** | Algebra of Boole extended over balanced ternary state partitions. |
+| **`Linear.NarayState`** | Linear QTT ternary state evolution ($27$ Vexel state partitions). |
+| **`Reflect.NarayElab`** | Elaborator reflection tactics for Narayana combinatorial proof exports. |
+
+---
+
+## Dependencies
+
+- **`Idris2-Multiset-Core`**
+- **`Idris2-Multiset-Binary`**
+
+---
+
+## Building & Usage
+
+Build the package using `pack`:
 
 ```bash
-idris2 --build Idris2-Naray2.ipkg
-idris2 --install Idris2-Naray2.ipkg
+pack build Idris2-Multiset-Ternary.ipkg
 ```
 
 ---
 
-## 🔬 Language & Framework Integration
-
-Written in **Idris 2** enforcing total constructivism (`%default total`).
+&copy; Justin Kelly. Formalized in pair-programming collaboration with Google Antigravity.
