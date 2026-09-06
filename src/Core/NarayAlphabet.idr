@@ -1,6 +1,7 @@
 module Core.NarayAlphabet
 
 import Math.BoxInt
+import Core.ScaleTransform
 import public Math.Singleton.Bit
 
 %default total
@@ -120,3 +121,14 @@ narayToInt : NarayAlphabet n -> Integer
 narayToInt (Naray2 Bit2Zero) = 0
 narayToInt (Naray2 Bit2One)  = 1
 narayToInt (Naray3 t)        = bit3ToInt t
+
+public export
+ScaleTransform Bit3 Integer where
+  scaleTransform = bit3ToInt
+
+public export
+InvertibleScaleTransform Bit3 Integer where
+  invertScaleTransform n =
+    if n <= -1 then Bit3MinusOne
+    else if n == 0 then Bit3Zero
+    else Bit3PlusOne
